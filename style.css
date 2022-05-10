@@ -11,6 +11,7 @@ h6 {
   padding: 0;
 }
 
+/* utility class */
 .container {
   max-width: 1109px;
   width: 77%;
@@ -18,7 +19,7 @@ h6 {
 }
 
 :root {
-  --mainFontFamily: "Libre Franklin";
+  --mainFontFamily: : 'Libre Franklin', sans-serif; 
 }
 
 /* skills */
@@ -102,6 +103,30 @@ progress::-webkit-progress-bar {
   justify-content: space-between;
 }
 
+
+
+.about{
+    margin-left: 165px;
+    margin-top: 53px;
+    margin-bottom: 76px;
+    font-family: var(--mainFontFamily);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+.info{
+    margin-left: 166px;
+    margin-bottom: 115px;
+    font-family: var(--description);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    color: #333333;
+}
 @media screen and (max-width: 375px) {
   .skillsFlexContainer {
     flex-direction: column;
