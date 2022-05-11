@@ -1,5 +1,97 @@
+:root{
+    --main-font-family: 'Libre Franklin', sans-serif;
+
+    }
 .container {
   max-width: 1109px;
   width: 77%;
   margin-inline: auto;
+}
+.portfolio{
+    display: flex;
+  
+}
+.mainInfo{
+    height: 822px;
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio__title{
+    font-family: var(--main-font-family);
+    color: #333333;
+font-size: 24px;
+height: 29px;
+text-align: left;
+margin-bottom: 86px;
+}
+.portfolio__subtitle{
+    font-family: var(--main-font-family);
+    color: #333333;
+font-size: 18px;
+height: 25px;
+text-align: left;
+margin-bottom: 48px;
+}
+.portfolio__info{
+    font-family: var(--main-font-family);
+    color: #333333;
+    height:137px;
+    width: 349px; 
+    margin-bottom:235px ;
+}
+.img-container{
+     height: 403px;
+    width: 634px; 
+    display: flex;
+    gap: 5px;
+    position: relative;
+top: 206px;
+
+}
+.portfolio__img{
+    content: "";
+    background-repeat: no-repeat;
+background-size: contain;
+position: absolute;
+
+}
+.portfolio__img-1{
+background-image: url(./img/portfolio_1.jpg);
+width: 350px;
+height: 144px;
+}
+.portfolio__img-2{
+background-image: url(./img/portfolio_2.jpg);;
+width: 256px;
+height: 241px;
+right: 0px;
+}
+.portfolio__img-3{
+background-image: url(./img/portfolio_3.jpg);
+width: 350px;
+height: 234px;
+bottom: 0px;
+
+}
+.portfolio__img-4{
+background-image: url(./img/portfolio_4.jpg);
+width: 255px;
+height: 144px;
+bottom: 0;
+right: 0px;
+}
+.buttons-container{
+position: relative;
+bottom: 0px;
+
+}
+.button-back,
+.button-forward{
+background-color: white;
+border: 0;
+width: 24px;
+height: 24px;
+font-size: 24px;
+text-align: center;
+color: #333333;
 }
