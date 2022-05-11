@@ -1,0 +1,112 @@
+.skills_backgroung{
+    height: 700px;
+
+    background: #FFFAF2;
+
+    padding-left: 10%;
+}
+
+.skills_h1{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 700;
+    color: #333333;
+    
+    position: absolute;
+    top: 50px;
+}
+
+.ul_profile{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333333;
+
+    position: absolute;
+    left: 1000px;
+    top: 200px;
+
+    list-style: none;
+}
+
+.ul_main{
+    margin-bottom: 50px;
+}
+
+.ul_secondary{
+    margin-bottom: 35px;
+}
+
+.ul_side{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #333333;
+
+    position: absolute;
+    left: 1200px;
+    top: 200px;
+
+    list-style: none;
+}
+
+.ul_main_side{
+    margin-top: 20px;
+    margin-bottom: 110px;
+}
+
+.ul_secondary_side{
+    margin-bottom: 92px;
+}
+
+/* Progres Bar */
+.progress_first{
+    position: relative;
+    width: 450px;
+    height: 30px;
+    background: #F5D6AB;
+
+    left: 990px;
+    top: 257px;
+}
+  
+.progress__main_first{
+    position: absolute;
+    width: 370px;
+    height: 30px;
+    background: #C66C49;
+}
+
+.progress_second{
+    position: relative;
+    width: 450px;
+    height: 30px;
+    background: #F5D6AB;
+
+    left: 990px;
+    top: 343px;
+}
+  
+.progress__main_second{
+    position: absolute;
+    width: 350px;
+    height: 30px;
+    background: #C66C49;
+}
+
+.progress_third{
+    position: relative;
+    width: 450px;
+    height: 30px;
+    background: #F5D6AB;
+
+    left: 990px;
+    top: 428px;
+}
+  
+.progress__main_third{
+    position: absolute;
+    width: 320px;
+    height: 30px;
+    background: #C66C49;
+}
+/* Progres Bar */
