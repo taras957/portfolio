@@ -66,7 +66,7 @@
     background: #F5D6AB;
 
     left: 990px;
-    top: 257px;
+    top: 275px;
 }
   
 .progress__main_first{
@@ -83,7 +83,7 @@
     background: #F5D6AB;
 
     left: 990px;
-    top: 343px;
+    top: 360px;
 }
   
 .progress__main_second{
@@ -100,7 +100,7 @@
     background: #F5D6AB;
 
     left: 990px;
-    top: 428px;
+    top: 445px;
 }
   
 .progress__main_third{
@@ -110,101 +110,11 @@
     background: #C66C49;
 }
 /* Progres Bar */
-*{
-    margin: 0;
-    padding: 0;
-}
-.hero{
-    background-image: url(/img/hero_bg.jpg);
-    
-    
-}
 
-.hero-head{
-    font-family: 'Libre Franklin';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 22px;
-margin-top: px;
-margin-left: 165px;
-/* identical to box height */
-height: 22px;
-
-
-color: #FFFFFF;
-}
-.hero-link_home{
-    font-family: 'Libre Franklin';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 22px;
-margin-left: 264px;
-/* identical to box height */
-text-decoration: none;
-padding-top: 93px;
-color: #FFFFFF;
-}
-.hero-link{
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    padding-left: 60px;
-    /* identical to box height */
-    text-decoration: none;
-    padding-top: 93px;
-    color: #FFFFFF;
-}
-.hero-title{
-    font-family: 'Libre Franklin';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 78px;
-/* identical to box height */
-margin-top: 152px;
-margin-left: 165px;
-display: flex;
-align-self: center;
-color: #FFFFFF;
-}
-.hero-text{
-    font-family: 'Libre Franklin';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-/* identical to box height */
-margin-top: 25px;
-margin-left: 165px;
-color: #FFFFFF;
-
-}
-.hero-subtitle-link{
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    
-    /* identical to box height */
-    color: #FFFFFF;
-    text-decoration: none;
-    margin-bottom: 240px;
-}
-.hero-list{
-    display: flex;
-    
-    
-    list-style-type: none;
-}
-.hero-subtitle{
-    margin-left: 165px;
-    margin-top: 106px;
-}
-.hero-list-item{
-    margin-top: 93px;
+.skills_img{
+    position: absolute;
+    left: 300px;
+    top: 150px;
+    height: 500px;
+    width: 500px;
 }
