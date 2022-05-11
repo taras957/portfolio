@@ -38,6 +38,7 @@ margin-bottom: 48px;
     height:137px;
     width: 349px; 
     margin-bottom:235px ;
+line-height: 30px;
 }
 .img-container{
      height: 403px;
@@ -94,4 +95,5 @@ height: 24px;
 font-size: 24px;
 text-align: center;
 color: #333333;
+
 }
