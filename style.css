@@ -14,7 +14,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 18px;
 line-height: 22px;
-padding-top: 93px;
+margin-top: 93px;
 margin-left: 165px;
 /* identical to box height */
 height: 22px;
@@ -31,7 +31,7 @@ line-height: 22px;
 margin-left: 464px;
 /* identical to box height */
 text-decoration: none;
-
+margin-top: 93px;
 color: #FFFFFF;
 }
 .hero-link{
@@ -43,7 +43,7 @@ color: #FFFFFF;
     padding-left: 60px;
     /* identical to box height */
     text-decoration: none;
-    
+    margin-top: 93px;
     color: #FFFFFF;
 }
 .hero-title{
