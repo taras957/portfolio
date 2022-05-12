@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h2 {
     margin-top: 90px;
     margin-left: 120px;
@@ -12,4 +13,103 @@ table {
     color: #333333;
     margin-left: 1180px;
     margin-top: 230px;
+=======
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    background-image: url(/img/hero_bg.jpg);
+    
+    
+}
+
+.hero-head{
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+margin-top: px;
+margin-left: 165px;
+/* identical to box height */
+height: 22px;
+
+
+color: #FFFFFF;
+}
+.hero-link_home{
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+margin-left: 264px;
+/* identical to box height */
+text-decoration: none;
+padding-top: 93px;
+color: #FFFFFF;
+}
+.hero-link{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 60px;
+    /* identical to box height */
+    text-decoration: none;
+    padding-top: 93px;
+    color: #FFFFFF;
+}
+.hero-title{
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 78px;
+/* identical to box height */
+margin-top: 152px;
+margin-left: 165px;
+display: flex;
+align-self: center;
+color: #FFFFFF;
+}
+.hero-text{
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+margin-top: 25px;
+margin-left: 165px;
+color: #FFFFFF;
+
+}
+.hero-subtitle-link{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    
+    /* identical to box height */
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-bottom: 240px;
+}
+.hero-list{
+    display: flex;
+    
+    
+    list-style-type: none;
+}
+.hero-subtitle{
+    margin-left: 165px;
+    margin-top: 106px;
+}
+.hero-list-item{
+    margin-top: 93px;
+>>>>>>> 846a2e4159348ea0cb525504acce86d49b879c2a
 }
