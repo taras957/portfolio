@@ -1,0 +1,15 @@
+h2 {
+    margin-top: 90px;
+    margin-left: 120px;
+}
+table {
+    margin-left: 120px;
+}
+.img{
+    background-image: url(item.png);
+    height: 15px;
+    width: 24px;
+    color: #333333;
+    margin-left: 1180px;
+    margin-top: 230px;
+}
