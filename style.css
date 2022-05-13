@@ -63,7 +63,7 @@ h6 {
 }
 
 .skillsToolsTitle {
-  width: 29%;
+  width: 189px;
   display: inline-block;
   font-family: var(--mainFontFamily);
   font-weight: 600;
@@ -72,15 +72,13 @@ h6 {
   color: #333333;
 }
 
-.skillsListItem{
+.skillsListItem {
   font-family: var(--mainFontFamily);
-font-weight: 400;
-font-size: 18px;
-line-height: 25px;
-color: #333333;
-
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333333;
 }
-
 
 /* progress Bar */
 .skillsProgress {
@@ -98,7 +96,54 @@ progress::-webkit-progress-bar {
   background: #f5d6ab;
 }
 
-.skillsProgressPosition{
+.skillsProgressPosition {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 375px) {
+  .skillsFlexContainer {
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .heroImg {
+    background-repeat: no-repeat;
+    width: 224px;
+    height: 218px;
+  }
+
+  .skillsList{
+gap: 10px;
+  }
+
+  .skillsProfile{
+padding-bottom: 25px;
+  }
+
+  .skillsTitle {
+    padding-top: 25px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+
+  .skillsToolsTitle
+   {
+    font-size: 12px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    width: 98px;
+  }
+
+  .skillsToolsDescription{
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .skillsProgress {
+    width: 200px;
+    height: 18px;
+  }
 }
