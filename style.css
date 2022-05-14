@@ -3,3 +3,29 @@
   width: 77%;
   margin-inline: auto;
 }
+div{
+  display: flex;
+  flex-direction: column;
+  margin-left: 166px;
+  margin-top: 93px;
+  gap: 76px;
+  height: 544px;
+  width: 1440px;
+  margin-right: 167px;
+  margin-bottom: 115px;
+}
+h2{
+  font-size: 24px;
+  width: 73px;
+  height: 29px;
+  left: 165px;
+  top: 861px;
+  
+  font-family: 'Libre Franklin';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+span{
+  font-size: 18px;
+}
