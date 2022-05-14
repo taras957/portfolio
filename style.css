@@ -116,8 +116,8 @@ progress::-webkit-progress-bar {
     line-height: 29px;
     color: #333333;
 }
-.info{
-    margin-left: 166px;
+.description__info{
+   
     margin-bottom: 115px;
     font-family: var(--description);
     font-style: normal;
@@ -128,9 +128,7 @@ progress::-webkit-progress-bar {
     color: #333333;
 }
 .description{
-    max-width: 1109px;
-    width: 77%;
-    margin-inline: auto;
+    
 }
 @media screen and (max-width: 375px) {
   .skillsFlexContainer {
