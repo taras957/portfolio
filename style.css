@@ -1,110 +1,112 @@
-.skills_backgroung{
-    height: 700px;
+.skills{
+    height: 650px;
 
     background: #FFFAF2;
-
-    padding-left: 10%;
 }
 
-.skills_h1{
+.skills_title{
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-left: 170px;
+    padding-top: 50px;
+
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 700;
-    color: #333333;
+}
+
+.secondary_text_main{
+    padding-left: 120px;
     
-    position: absolute;
-    top: 50px;
-}
-
-.ul_profile{
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    color: #333333;
-
-    position: absolute;
-    left: 1000px;
-    top: 200px;
-
-    list-style: none;
-}
-
-.ul_main{
-    margin-bottom: 50px;
-}
-
-.ul_secondary{
-    margin-bottom: 35px;
-}
-
-.ul_side{
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: #333333;
+}
 
-    position: absolute;
-    left: 1200px;
-    top: 200px;
+.about_list{
+    padding-left: 850px;
+}
 
+.ul_about{
     list-style: none;
 }
 
-.ul_main_side{
-    margin-top: 20px;
-    margin-bottom: 110px;
+.skill_list_head{
+    display: flex;
+
+    margin-bottom: 20px;
 }
 
-.ul_secondary_side{
-    margin-bottom: 92px;
+.skill_list{
+    display: flex;
+}
+
+.skill_list_progress{
+    display: flex;
+    align-items: center;
+}
+
+.skills_bold{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333333;
+}
+
+.skills_secondary_text{
+    padding-left: 130px;
+
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #333333;
 }
 
 /* Progres Bar */
 .progress_first{
-    position: relative;
+    margin-left: 60px;
+
     width: 450px;
     height: 30px;
     background: #F5D6AB;
-
-    left: 990px;
-    top: 275px;
 }
-  
+   
 .progress__main_first{
-    position: absolute;
+    display: flex;
+    align-items: center;
+    
     width: 370px;
     height: 30px;
     background: #C66C49;
 }
 
 .progress_second{
-    position: relative;
+    margin-left: 90px;
+
+    justify-content: center;
+
     width: 450px;
     height: 30px;
     background: #F5D6AB;
-
-    left: 990px;
-    top: 360px;
 }
   
 .progress__main_second{
-    position: absolute;
     width: 350px;
     height: 30px;
     background: #C66C49;
 }
 
 .progress_third{
-    position: relative;
+    margin-left: 35px;
+
+    justify-content: center;
+
     width: 450px;
     height: 30px;
     background: #F5D6AB;
-
-    left: 990px;
-    top: 445px;
 }
   
 .progress__main_third{
-    position: absolute;
     width: 320px;
     height: 30px;
     background: #C66C49;
@@ -113,8 +115,8 @@
 
 .skills_img{
     position: absolute;
-    left: 300px;
-    top: 150px;
-    height: 500px;
-    width: 500px;
+    height: 350px;
+
+    margin-top: 70px;
+    margin-left: 170px; 
 }
