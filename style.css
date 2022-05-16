@@ -14,15 +14,6 @@
     font-weight: 700;
 }
 
-.secondary_text_main{
-    padding-left: 120px;
-    
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: #333333;
-}
-
 .about_list{
     padding-left: 850px;
 }
@@ -56,6 +47,15 @@
 .skills_secondary_text{
     padding-left: 130px;
 
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #333333;
+}
+
+.skills_secondary_text_main{
+    padding-left: 120px;
+    
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 400;
     font-size: 20px;
