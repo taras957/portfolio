@@ -1,82 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap" rel="stylesheet">
-    <title>Portfolio_v1</title>
-  </head>
-  <body class="body">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./normalize.css" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Portfolio_v1</title>
+</head>
+
+<body>
+
+  <main>
     <section class="skills">
+      <div class="container">
+        
+        <div class="skillsTitle">Skills</div>
 
-      <div class="skills_backgroung">
+        <div class="skillsFlexContainer">
+          <img src="./img/skills_person.jpg" alt="a hero photo here" class="heroImg">
 
-        <h1 class="skills_h1">Skills</h1>
-
-        <img src="./img/skills_persone.jpg" alt="cool_persone">
-
-        <!-- First part -->
-        <ul class="ul_profile">
-          <li class="ul_main">Profile</li>
-          <li class="ul_secondary">UX Research</li>
-          <li class="ul_secondary">Tools</li>
-          <li class="ul_secondary">UI Design</li>
-          <li class="ul_secondary">Tools</li>
-          <li class="ul_secondary">Front-end Dev</li>
-          <li class="ul_secondary">Tools</li>
-        </ul>
-        <!-- First part -->
-
-        <!-- Second Part -->
-        <ul>
-          <ul class="ul_side">
-            <li class="ul_main_side">UI / UX Engineer, Front-end Developer</li>
-            <li class="ul_secondary_side">Paper, Pen, Balsamiq</li>
-            <li class="ul_secondary_side">Adobe PS, AI, XD, Figma, InVision</li>
-            <li class="ul_secondary_side">HTML, CSS, JS, Bootstrap, React</li>
-        </ul>
-        <!-- Second Part -->
-
-        <!-- Progres Bar -->
-        <div class="progress_first">
-          <div class="progress__main_first"></div>
+            <ul class="skillsList">
+              <li class="skillsListItem skillsProfile">
+                <div class="skillsToolsTitle">Profile</div><span class="skillsToolsDescription"> UI / UX Engineer, Front-end Developer</span>
+              </li>
+              <li class="skillsListItem skillsProgressPosition">
+                <label class="skillsToolsTitle">UX Research</label>
+                <progress value="381" min="0" max="446" class="skillsProgress"></progress>
+              </li>
+              <li class="skillsListItem">
+                <div class="skillsToolsTitle">Tools</div>
+                <span class="skillsToolsDescription">Paper, Pen, Balsamiq</span>
+              </li>
+              <li class="skillsListItem skillsProgressPosition">
+                <label for="design" class="skillsToolsTitle">UI Design</label>
+                <progress name="design" value="381" min="0" max="446" class="skillsProgress"></progress>
+              </li>
+              <li class="skillsListItem">
+                <div class="skillsToolsTitle">Tools</div>
+                <span class="skillsToolsDescription">Adobe PS, AI, XD, Figma, InVision</span>
+              </li>
+              <li class="skillsListItem skillsProgressPosition">
+                <label for="research" class="skillsToolsTitle">Front-end Dev</label>
+                <progress name="research" value="381" min="0" max="446" class="skillsProgress"></progress>
+              </li>
+              <li class="skillsListItem">
+                <div class="skillsToolsTitle">Tools</div>
+                <span class="skillsToolsDescription">HTML, CSS, JS, Bootstrap, React</span>
+          
+          </li>
+          </ul>
         </div>
-
-        <div class="progress_second">
-          <div class="progress__main_second"></div>
-        </div>
-
-        <div class="progress_third">
-          <div class="progress__main_third"></div>
-        </div>
-        <!-- Progres Bar -->
-
-      </div>
-    </section>
-  <body>
-    <section class="hero">
       
-        <ul class="hero-list">
-          <li class="hero-list-item"><div class="hero-head">Portfolio </div></li>
-        <li class="hero-list-item"><a href="" class="hero-link_home">Home</a></li>
-        <li class="hero-list-item"><a href="" class="hero-link">About</a></li>
-        <li class="hero-list-item"><a href="" class="hero-link">Skills</a></li>
-        <li class="hero-list-item"><a href="" class="hero-link">Portfolio</a></li>
-        <li class="hero-list-item"><a href="" class="hero-link">Contact</a></li>
-      </ul>
-    
-    <h2 class="hero-title">Hi, It’s Théophile Seyrig</h2>
-    <p class="hero-text">Designer from Porto, Portugal</p>
-    <div class="hero-subtitle"><a class="hero-subtitle-link">Latest works</a></div>
-    </section>
-    
-  </body>
+      </div>
+  </main>
+
+  </section>
+
+</body>
+
 </html>
