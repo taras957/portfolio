@@ -7,12 +7,12 @@
   width: 77%;
   margin-inline: auto;
 }
+/* Portfolio */
 .portfolio{
     display: flex;
-  
+    height: 822px;
 }
 .mainInfo{
-    height: 822px;
     display: flex;
     justify-content: space-between;
 }
@@ -97,135 +97,75 @@ text-align: center;
 color: #333333;
 
 }
-
-
-:root {
-  --mainFontFamily: "Libre Franklin";
-}
-
-/* skills */
-.skills {
-  width: 100%;
-  height: 693px;
-  background: #fffaf2;
-}
-
-.skillsTitle {
-  padding-top: 93px;
-  margin-bottom: 86px;
-  font-family: var(--mainFontFamily);
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  color: #333333;
-}
-.skillsFlexContainer {
-  height: 485px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 125px;
-}
-
-.skillsStats {
-  width: 72%;
-  height: 100%;
-}
-
-.skillsList {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  gap: 20px;
-}
-
-.skillsProfile {
-  padding-bottom: 45px;
-}
-
-.skillsToolsTitle {
-  width: 189px;
-  display: inline-block;
-  font-family: var(--mainFontFamily);
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  color: #333333;
-}
-
-.skillsListItem {
-  font-family: var(--mainFontFamily);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  color: #333333;
-}
-
-/* progress Bar */
-.skillsProgress {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 446px;
-  height: 24px;
-}
-
-progress::-webkit-progress-value {
-  background: #c66c49;
-}
-
-progress::-webkit-progress-bar {
-  background: #f5d6ab;
-}
-
-.skillsProgressPosition {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 375px) {
-  .skillsFlexContainer {
+@media screen and (max-width:375px){
+  .portfolio{
+    height: 404px;
+    width:375px;
+  }
+  .mainInfo{
     flex-direction: column;
-    gap: 26px;
-  }
+    justify-content: center;
+}
+.portfolioInfo{
+  display: flex;
+align-items: center;
+flex-direction: column;
 
-  .heroImg {
-    background-repeat: no-repeat;
-    width: 224px;
-    height: 218px;
-  }
 
-  .skillsList{
-gap: 10px;
-  }
+}
+.portfolio__title,
+.portfolio__subtitle,
+.portfolio__info{
+  text-align: center;
+}
+.portfolio__title{
+  margin-top: 25px;
+  margin-bottom: 19px;
+  font-weight: 600;
+font-size: 24px;
+line-height: 29px;
+}
+.portfolio__subtitle{
+  margin-bottom: 15px;
+  font-weight: 500;
+font-size: 14px;
+line-height: 25px; 
+}
+.portfolio__info{
+  margin-bottom: 0;
+  height: 71px;
+  font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+}
 
-  .skillsProfile{
-padding-bottom: 25px;
+.img-container{
+  width:305px;
+  height: 195px;
+  
+  top:0 ;
+ 
+}
+.portfolio__img-1{
+  width: 169.76px;
+height: 69.85px;
   }
-
-  .skillsTitle {
-    padding-top: 25px;
-    margin-bottom: 25px;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
+  .portfolio__img-2{ 
+  width: 123.69px;
+  height: 113.01px;
   }
-
-  .skillsToolsTitle
-   {
-    font-size: 12px;
-    line-height: 25px;
-    margin-bottom: 10px;
-    width: 98px;
+  .portfolio__img-3{
+    width:169.76px ;
+    height: 113.01px;
+  
   }
-
-  .skillsToolsDescription{
-    font-size: 12px;
-    line-height: 25px;
-  }
-  .skillsProgress {
-    width: 200px;
-    height: 18px;
+  .portfolio__img-4{
+    width: 121.69px;
+    height: 69.85px;
   }
 }
+
+
+
+
+
