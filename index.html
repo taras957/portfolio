@@ -1,40 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Portfolio_v1</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./normalize.css" />
+  <link rel="stylesheet" href="./style.css" />
 
-  </head>
-  <body> 
-      <div class="background__hero">
-        <section class="hero">
-        <div class="flex-container">
-          <p class="hero__portfolio">Portofolio</p> 
-         
-          <ul class="hero-list">
-          <li class="hero-list__item"><a href="" class="hero__title">Home</a></li>
-          <li class="hero-list__item"><a href="" class="hero__title">About</a></li>
-          <li class="hero-list__item"><a href="" class="hero__title">Skills</a></li>
-          <li class="hero-list__item"><a href="" class="hero__title">Portfolio</a></li>
-          <li class="hero-list__item"><a href="" class="hero__title">Contact</a></li>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Portfolio_v1</title>
+</head>
+
+<body>
+  <div class="background__hero">
+    <section class="hero">
+    <div class="flex-container">
+      <p class="hero__portfolio">Portofolio</p> 
+     
+      <ul class="hero-list">
+      <li class="hero-list__item"><a href="" class="hero__title">Home</a></li>
+      <li class="hero-list__item"><a href="" class="hero__title">About</a></li>
+      <li class="hero-list__item"><a href="" class="hero__title">Skills</a></li>
+      <li class="hero-list__item"><a href="" class="hero__title">Portfolio</a></li>
+      <li class="hero-list__item"><a href="" class="hero__title">Contact</a></li>
+      
+      </ul>
+    </div>
+  </section>
+    <section class="main__hero">
+    <p class="main__title">Hi, It's Théophile Seyrig</p>
+    <p class="main__subtitle">Designer from Porto, Portugal</p>
+  </section>
+  <section class="work__title">
+    <a href="" class="last-title">Latest works</a>
+  </section>
+  </div>
+  <main>
+    <section class="skills">
+      <div class="container">
+        
+        <div class="skillsTitle">Skills</div>
+
+        <div class="skillsFlexContainer">
+          <img src="./img/skills_person.jpg" alt="a hero photo here" class="heroImg">
+
+            <ul class="skillsList">
+              <li class="skillsListItem skillsProfile">
+                <div class="skillsToolsTitle">Profile</div><span class="skillsToolsDescription"> UI / UX Engineer, Front-end Developer</span>
+              </li>
+              <li class="skillsListItem skillsProgressPosition">
+                <label class="skillsToolsTitle">UX Research</label>
+                <progress value="381" min="0" max="446" class="skillsProgress"></progress>
+              </li>
+              <li class="skillsListItem">
+                <div class="skillsToolsTitle">Tools</div>
+                <span class="skillsToolsDescription">Paper, Pen, Balsamiq</span>
+              </li>
+              <li class="skillsListItem skillsProgressPosition">
+                <label for="design" class="skillsToolsTitle">UI Design</label>
+                <progress name="design" value="381" min="0" max="446" class="skillsProgress"></progress>
+              </li>
+              <li class="skillsListItem">
+                <div class="skillsToolsTitle">Tools</div>
+                <span class="skillsToolsDescription">Adobe PS, AI, XD, Figma, InVision</span>
+              </li>
+              <li class="skillsListItem skillsProgressPosition">
+                <label for="research" class="skillsToolsTitle">Front-end Dev</label>
+                <progress name="research" value="381" min="0" max="446" class="skillsProgress"></progress>
+              </li>
+              <li class="skillsListItem">
+                <div class="skillsToolsTitle">Tools</div>
+                <span class="skillsToolsDescription">HTML, CSS, JS, Bootstrap, React</span>
           
+          </li>
           </ul>
         </div>
-      </section>
-        <section class="main__hero">
-        <p class="main__title">Hi, It's Théophile Seyrig</p>
-        <p class="main__subtitle">Designer from Porto, Portugal</p>
-      </section>
-      <section class="work__title">
-        <a href="" class="last-title">Latest works</a>
-      </section>
+      
       </div>
-  </body>
+  </main>
+
+  </section>
+
+</body>
+
 </html>
