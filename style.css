@@ -3,3 +3,105 @@
   width: 77%;
   margin-inline: auto;
 }
+body {
+    height:100vh;
+}
+.background__hero {
+    background-image: url(./img/Background.png) ;
+    background-repeat: no-repeat;
+    height:100vh;
+  
+}
+.hero__title {
+    font-family: 'Libre Franklin';
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  
+    color: #FFFFFF; 
+    margin-left:60px;
+    text-decoration:none;
+}
+.hero__title:hover {
+    font-weight: 700;
+}
+
+/* .hero__home {
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+
+color: #FFFFFF;
+
+    
+} */
+.flex-container {
+    display:flex;
+    justify-content: flex-end;
+    margin-right:83px ;
+    
+    align-items: center;
+    flex-direction: row;
+} 
+.hero__portfolio {
+    font-family: 'Libre Franklin';
+
+font-weight: 700;
+font-size: 24px;
+line-height: 24px;
+
+color: #FFFFFF;
+margin-right: 600px;   
+}
+ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    
+}
+.main__title {
+    font-family: 'Libre Franklin';
+
+font-weight: 400;
+font-size: 64px;
+line-height: 68px;
+
+color: #FFFFFF;
+margin-top:200px;
+margin-left:73px;
+margin-bottom: 0;
+
+}
+.main__subtitle {
+    font-family: 'Libre Franklin';
+font-weight: 400;
+font-size: 24px;
+line-height: 26px;
+
+color: #FFFFFF;
+margin-left:73px;
+
+}
+.last-title {
+    font-family: 'Libre Franklin';
+
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+
+
+color: #FFFFFF;
+
+
+}
+.work__title {
+    margin-top: 157px;
+    margin-left: 73px;
+}
+.hero {
+    text-decoration: none;
+
+}
