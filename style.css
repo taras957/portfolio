@@ -1,6 +1,4 @@
 .skills{
-    height: 650px;
-
     background: #FFFAF2;
 }
 
@@ -119,4 +117,85 @@
 
     margin-top: 70px;
     margin-left: 170px; 
+}
+
+@media screen and (max-width: 375px) {
+  .about_list{
+    position: absolute;
+    padding-top: 450px;
+    padding-left: 100px;
+  }
+
+  .progress_first{
+    margin-left: 45px;
+
+    width: 200px;
+    height: 20px;
+  }
+   
+  .progress__main_first{
+    width: 180px;
+    height: 20px;
+
+  }
+
+  .progress_second{
+    margin-left: 65px;
+
+    width: 200px;
+    height: 20px;
+  }
+  
+  .progress__main_second{
+    width: 160px;
+    height: 20px;
+  }
+
+  .progress_third{
+    margin-left: 30px;
+
+    width: 200px;
+    height: 20px;
+  }
+  
+  .progress__main_third{
+    width: 150px;
+    height: 20px;
+  }
+
+  .skills_img{
+    position: absolute;
+    height: 250px;
+    margin-top: 100px;
+    margin-left: 60px;
+  }
+
+  .skills_title{
+    position: absolute;
+    padding-left: 150px;
+  }
+
+  .about_list{
+   padding: 20px;
+   padding-top: 400px;
+  }
+
+  .skill_list_head{
+    margin-bottom: 10px;
+  }
+
+  .skills_bold{
+   font-size: 15px;
+  }
+
+  .skills_secondary_text{
+    margin-left: 30px;
+    font-size: 15px;
+    padding-left: 70px;
+  }
+
+  .skills_secondary_text_main{
+    font-size: 15px;
+    padding-left: 90px;
+  }
 }
