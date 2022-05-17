@@ -43,7 +43,7 @@ h6 {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 125px;
+  gap: 11.5%;
 }
 
 .skillsStats {
@@ -51,19 +51,25 @@ h6 {
   height: 100%;
 }
 
+.heroImg {
+  width: 350px;
+  height: auto;
+}
 .skillsList {
   display: flex;
   flex-direction: column;
   list-style: none;
   gap: 20px;
+
+  width: 100%;
 }
 
 .skillsProfile {
   padding-bottom: 45px;
 }
 
-.skillsToolsTitle {
-  width: 189px;
+.skillsSubTitle {
+  width: 28%;
   display: inline-block;
   font-family: var(--mainFontFamily);
   font-weight: 600;
@@ -84,7 +90,7 @@ h6 {
 .skillsProgress {
   -webkit-appearance: none;
   appearance: none;
-  width: 446px;
+  width: 72%;
   height: 24px;
 }
 
@@ -102,24 +108,115 @@ progress::-webkit-progress-bar {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 375px) {
+/* adaptation */
+
+@media screen and (max-width: 1024px) {
+  .skillsListItem,
+  .skillsSubTitle {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .skillsTitle {
+    padding-top: 76px;
+    margin-bottom: 68px;
+  }
+
+  .heroImg {
+    width: 310px;
+    height: auto;
+  }
+
+  .skillsList {
+    gap: 17px;
+  }
+
+  .skillsProfile {
+    padding-bottom: 25px;
+  }
+
+  .skillsFlexContainer {
+    height: 100%;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .skillsFlexContainer {
     flex-direction: column;
+    gap: 32px;
+  }
+
+  .heroImg {
+    width: 260px;
+  }
+
+  .skillsList {
+    gap: 15px;
+  }
+
+  .skillsProfile {
+    padding-bottom: 22px;
+  }
+
+  .skillsTitle {
+    padding-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .skillsListItem,
+  .skillsSubTitle {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .skillsSubTitle {
+    width: 28%;
+  }
+
+  .skillsProgress {
+    height: 21px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .skillsTitle {
+    padding-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .heroImg {
+    width: 235px;
+  }
+
+  .skillsListItem,
+  .skillsSubTitle {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .skillsFlexContainer {
     gap: 26px;
+  }
+
+  .skillsToolsDescription {
+    display: inline;
+    width: 150px;
   }
 
   .heroImg {
     background-repeat: no-repeat;
     width: 224px;
-    height: 218px;
   }
 
-  .skillsList{
-gap: 10px;
+  .skillsList {
+    gap: 10px;
   }
 
-  .skillsProfile{
-padding-bottom: 25px;
+  .skillsProfile {
+    padding-bottom: 25px;
   }
 
   .skillsTitle {
@@ -130,20 +227,44 @@ padding-bottom: 25px;
     text-align: center;
   }
 
-  .skillsToolsTitle
-   {
+  .skillsSubTitle {
     font-size: 12px;
     line-height: 25px;
-    margin-bottom: 10px;
     width: 98px;
   }
 
-  .skillsToolsDescription{
+  .skillsToolsDescription {
     font-size: 12px;
     line-height: 25px;
   }
   .skillsProgress {
-    width: 200px;
     height: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .skillsSubTitle.SkillsToolsTitle {
+    width: 100%;
+  }
+
+  .skillsTitle {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .heroImg {
+    width: 200px;
+  }
+
+  .skillsProfile {
+    padding-bottom: 20px;
+  }
+
+  .skillsSubTitle {
+    font-size: 11px;
+  }
+
+  .skillsProgress {
+    height: 16px;
   }
 }
