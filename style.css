@@ -4,6 +4,8 @@
 }
 .hero{
     background-image: url(/img/hero_bg.jpg);
+    background-repeat: no-repeat;
+    padding-top: 93px;
     
     
 }
@@ -15,24 +17,17 @@ font-weight: 700;
 font-size: 18px;
 line-height: 22px;
 margin-top: px;
-margin-left: 165px;
+margin-right: 200px;
 /* identical to box height */
 height: 22px;
 
 
 color: #FFFFFF;
 }
-.hero-link_home{
-    font-family: 'Libre Franklin';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 22px;
-margin-left: 264px;
-/* identical to box height */
-text-decoration: none;
-padding-top: 93px;
-color: #FFFFFF;
+
+.hero-link:hover{
+  font-weight: 700;
+  
 }
 .hero-link{
     font-family: 'Libre Franklin';
@@ -45,6 +40,7 @@ color: #FFFFFF;
     text-decoration: none;
     padding-top: 93px;
     color: #FFFFFF;
+    
 }
 .hero-title{
     font-family: 'Libre Franklin';
@@ -54,7 +50,7 @@ font-size: 64px;
 line-height: 78px;
 /* identical to box height */
 margin-top: 152px;
-margin-left: 165px;
+
 display: flex;
 align-self: center;
 color: #FFFFFF;
@@ -67,7 +63,7 @@ font-size: 24px;
 line-height: 29px;
 /* identical to box height */
 margin-top: 25px;
-margin-left: 165px;
+
 color: #FFFFFF;
 
 }
@@ -86,17 +82,23 @@ color: #FFFFFF;
 .hero-list{
     display: flex;
     
-    
     list-style-type: none;
 }
 .hero-subtitle{
-    margin-left: 165px;
+    
     margin-top: 106px;
 }
 .hero-list-item{
-    margin-top: 93px;
+  
 }
-
+.hero-lines{
+  position: fixed;
+  width: 20px;
+  height: 22px;
+ margin-left: 34px;
+  background-image: url(/img/lines.png);
+  background-repeat: no-repeat;
+}
 /* general features */
 p,
 ul,
@@ -245,4 +247,63 @@ padding-bottom: 25px;
     width: 200px;
     height: 18px;
   }
+}
+@media screen and (max-width:376px){
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  .hero{
+    text-align: center;
+    padding-top: 36px;
+    
+  }
+  .hero-head{
+   width: 100vh;
+   margin-top: 706px;
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+margin: 0px;
+  }
+  .hero-title{
+  margin-top: 50px;
+   display: block;
+   width: 100vh;
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+  }
+  .container{
+width: 100vh;
+  }
+  .hero-list-item{
+    display: none;
+  }
+  .hero-text{
+    margin-top: 13px;
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+  }
+  .hero-subtitle-link{
+    margin-top: 41px;
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+  }
+  .hero-lines{
+    visibility: visible;
+    margin-left: 34pxpx;
+  }
+  
+  
 }
