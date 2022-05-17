@@ -1,43 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap" rel="stylesheet">
-    <title>Portfolio_v1</title>
-  </head>
-  <body>
 
-    <h2>Get in Touch</h2>
-    <table border = "0"  width = "100%" cellpadding = "8">
-      <tr class="line_1">
-        <td class="column_1">Dribbble</td>
-        <td>LinkedIn</td>
-        <td>seyrig@mailme.com</td>
-      </tr>
-      <tr class="line_2">
-        <td class="column_1">Behance</td>
-        <td>Facebook</td>
-        <td>+ 55 6645 665544</td>
-      </tr>
-      <tr class="line_3">
-        <td class="column_1">CodePen</td>
-        <td>Instagram</td>
-      </tr>
-      <tr class="line_4">
-        <td class="column_1">GitHub</td>
-        <td>Twitter</td>
-      </tr>
-      <tr class="line_5">
-        <td class="column_1">Medium</td>
-      </tr>
-    </table>
-    <div class="img"></div>
 
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./normalize.css" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Portfolio_v1</title>
+</head>
+
+<body>
+
+  <main>
+    <section class="skills">
+      <div class="container">
+        
+        <div class="skillsTitle">Skills</div>
+
+        <div class="skillsFlexContainer">
+          <img src="./img/skills_person.jpg" alt="a hero photo here" class="heroImg">
+
+            <ul class="skillsList">
+              <li class="skillsListItem skillsProfile">
+                <div class="skillsToolsTitle">Profile</div><span class="skillsToolsDescription"> UI / UX Engineer, Front-end Developer</span>
+              </li>
+              <li class="skillsListItem skillsProgressPosition">
+                <label class="skillsToolsTitle">UX Research</label>
+                <progress value="381" min="0" max="446" class="skillsProgress"></progress>
+              </li>
+              <li class="skillsListItem">
+                <div class="skillsToolsTitle">Tools</div>
+                <span class="skillsToolsDescription">Paper, Pen, Balsamiq</span>
+              </li>
+              <li class="skillsListItem skillsProgressPosition">
+                <label for="design" class="skillsToolsTitle">UI Design</label>
+                <progress name="design" value="381" min="0" max="446" class="skillsProgress"></progress>
+              </li>
+              <li class="skillsListItem">
+                <div class="skillsToolsTitle">Tools</div>
+                <span class="skillsToolsDescription">Adobe PS, AI, XD, Figma, InVision</span>
+              </li>
+              <li class="skillsListItem skillsProgressPosition">
+                <label for="research" class="skillsToolsTitle">Front-end Dev</label>
+                <progress name="research" value="381" min="0" max="446" class="skillsProgress"></progress>
+              </li>
+              <li class="skillsListItem">
+                <div class="skillsToolsTitle">Tools</div>
+                <span class="skillsToolsDescription">HTML, CSS, JS, Bootstrap, React</span>
+          
+          </li>
+          </ul>
+        </div>
+      
+      </div>
+      <footer>
+        <h2>Get in Touch</h2>
+      <table border="0" width = "100%" cellpadding = "8">
+        <tr class="line_1">
+          <td class="column_1">Dribbble</td>
+          <td>LinkedIn</td>
+          <td>seyrig@mailme.com</td>
+        </tr>
+        <tr class="line_2">
+          <td class="column_1">Behance</td>
+          <td>Facebook</td>
+          <td>+ 55 6645 665544</td>
+        </tr>
+        <tr class="line_3">
+          <td class="column_1">CodePen</td>
+          <td>Instagram</td>
+        </tr>
+        <tr class="line_4">
+          <td class="column_1">GitHub</td>
+          <td>Twitter</td>
+        </tr>
+        <tr class="line_5">
+          <td class="column_1">Medium</td>
+        </tr>
+      </table>
+      <div class="img"></div>
+      </footer>
+  </main>
+
+  </section>
+
+</body>
+
 </html>
