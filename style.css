@@ -98,6 +98,7 @@ color: #FFFFFF;
  margin-left: 34px;
   background-image: url(/img/lines.png);
   background-repeat: no-repeat;
+  visibility: hidden;
 }
 /* general features */
 p,
@@ -209,7 +210,7 @@ progress::-webkit-progress-bar {
     gap: 26px;
   }
 
-  .heroImg {
+  .hero-img {
     background-repeat: no-repeat;
     width: 224px;
     height: 218px;
@@ -248,11 +249,100 @@ padding-bottom: 25px;
     height: 18px;
   }
 }
-@media screen and (max-width:376px){
-  *{
-    padding: 0;
-    margin: 0;
+@media screen and (max-width: 1025px){
+  .hero{
+    width: 100%;
+    margin: 0px;
   }
+  .hero-lines{
+    position: fixed;
+  width: 20px;
+  height: 22px;
+ margin-left: 674px;
+  background-image: url(/img/lines.png);
+  background-repeat: no-repeat;
+  visibility: visible;
+  }
+  
+}
+@media screen and (max-width: 769px){
+  .hero{
+    width: 100%;
+    margin: 0px;
+  }
+  .hero-lines{
+    position: fixed;
+  width: 20px;
+  height: 22px;
+ margin-left: 474px;
+  background-image: url(/img/lines.png);
+  background-repeat: no-repeat;
+  visibility: visible;
+  }
+  .hero-list-item{
+    display: none;
+  }
+}
+@media screen and (max-width:426px){
+  .hero{
+    text-align: center;
+    padding-top: 36px;
+    
+  }
+  .hero-head{
+   width: 100vh;
+   margin-top: 706px;
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+margin: 0px;
+  }
+  .hero-title{
+  margin-top: 50px;
+   display: block;
+   width: 100vh;
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+  }
+  .container{
+width: 100%;
+  }
+  .hero-list-item{
+    display: none;
+  }
+  .hero-text{
+    margin-top: 13px;
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+  }
+  .hero-subtitle-link{
+    margin-top: 41px;
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+  }
+  .hero-lines{
+    visibility: visible;
+    margin-left: 34px;
+  }
+}
+  
+
+
+  
+
+@media screen and (max-width:376px){
+  
   .hero{
     text-align: center;
     padding-top: 36px;
@@ -302,7 +392,7 @@ line-height: 16px;
   }
   .hero-lines{
     visibility: visible;
-    margin-left: 34pxpx;
+    margin-left: 34px;
   }
   
   
