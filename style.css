@@ -1,98 +1,238 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.hero{
-    background-image: url(/img/hero_bg.jpg);
-    width: 1240px;
-    
+/* general features */
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
-.hero-head{
-    font-family: 'Libre Franklin';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 22px;
-margin-top: px;
-margin-left: 165px;
-/* identical to box height */
-height: 22px;
+.container {
+  max-width: 1109px;
+  width: 77%;
+  margin-inline: auto;
+}
 
+:root {
+  --mainFontFamily: 'Libre Franklin';
+}
+.hero {
+  background-image: url(/img/hero_bg.jpg);
+  width: 1240px;
+}
 
-color: #FFFFFF;
-}
-.hero-link_home{
-    font-family: 'Libre Franklin';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 22px;
-margin-left: 264px;
-/* identical to box height */
-text-decoration: none;
-padding-top: 93px;
-color: #FFFFFF;
-}
-.hero-link{
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    padding-left: 60px;
-    /* identical to box height */
-    text-decoration: none;
-    padding-top: 93px;
-    color: #FFFFFF;
-}
-.hero-title{
-    font-family: 'Libre Franklin';
-font-style: normal;
-font-weight: 400;
-font-size: 64px;
-line-height: 78px;
-/* identical to box height */
-margin-top: 152px;
-margin-left: 165px;
-display: flex;
-align-self: center;
-color: #FFFFFF;
-}
-.hero-text{
-    font-family: 'Libre Franklin';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-/* identical to box height */
-margin-top: 25px;
-margin-left: 165px;
-color: #FFFFFF;
+.hero-head {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: px;
+  margin-left: 165px;
+  /* identical to box height */
+  height: 22px;
 
+  color: #ffffff;
 }
-.hero-subtitle-link{
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    
-    /* identical to box height */
-    color: #FFFFFF;
-    text-decoration: none;
-    margin-bottom: 240px;
+.hero-link_home {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 264px;
+  /* identical to box height */
+  text-decoration: none;
+  padding-top: 93px;
+  color: #ffffff;
 }
-.hero-list{
-    display: flex;
-    
-    
-    list-style-type: none;
+.hero-link {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 60px;
+  /* identical to box height */
+  text-decoration: none;
+  padding-top: 93px;
+  color: #ffffff;
 }
-.hero-subtitle{
-    margin-left: 165px;
-    margin-top: 106px;
+.hero-title {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 78px;
+  /* identical to box height */
+  margin-top: 152px;
+  margin-left: 165px;
+  display: flex;
+  align-self: center;
+  color: #ffffff;
 }
-.hero-list-item{
-    margin-top: 93px;
+.hero-text {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  margin-top: 25px;
+  margin-left: 165px;
+  color: #ffffff;
+}
+.hero-subtitle-link {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  /* identical to box height */
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 240px;
+}
+.hero-list {
+  display: flex;
+
+  list-style-type: none;
+}
+.hero-subtitle {
+  margin-left: 165px;
+  margin-top: 106px;
+}
+.hero-list-item {
+  margin-top: 93px;
+}
+
+/* skills */
+.skills {
+  width: 100%;
+  height: 693px;
+  background: #fffaf2;
+}
+
+.skillsTitle {
+  padding-top: 93px;
+  margin-bottom: 86px;
+  font-family: var(--mainFontFamily);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+.skillsFlexContainer {
+  height: 485px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 125px;
+}
+
+.skillsStats {
+  width: 72%;
+  height: 100%;
+}
+
+.skillsList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 20px;
+}
+
+.skillsProfile {
+  padding-bottom: 45px;
+}
+
+.skillsToolsTitle {
+  width: 189px;
+  display: inline-block;
+  font-family: var(--mainFontFamily);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333333;
+}
+
+.skillsListItem {
+  font-family: var(--mainFontFamily);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #333333;
+}
+
+/* progress Bar */
+.skillsProgress {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 446px;
+  height: 24px;
+}
+
+progress::-webkit-progress-value {
+  background: #c66c49;
+}
+
+progress::-webkit-progress-bar {
+  background: #f5d6ab;
+}
+
+.skillsProgressPosition {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 375px) {
+  .skillsFlexContainer {
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .heroImg {
+    background-repeat: no-repeat;
+    width: 224px;
+    height: 218px;
+  }
+
+  .skillsList {
+    gap: 10px;
+  }
+
+  .skillsProfile {
+    padding-bottom: 25px;
+  }
+
+  .skillsTitle {
+    padding-top: 25px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+
+  .skillsToolsTitle {
+    font-size: 12px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    width: 98px;
+  }
+
+  .skillsToolsDescription {
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .skillsProgress {
+    width: 200px;
+    height: 18px;
+  }
 }
