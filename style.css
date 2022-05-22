@@ -11,6 +11,7 @@ h6 {
   padding: 0;
 }
 
+/* utility class */
 .container {
   max-width: 1109px;
   width: 77%;
@@ -18,7 +19,7 @@ h6 {
 }
 
 :root {
-  --mainFontFamily: "Libre Franklin";
+  --mainFontFamily: : 'Libre Franklin', sans-serif;
 }
 
 /* skills */
@@ -37,6 +38,7 @@ h6 {
   line-height: 29px;
   color: #333333;
 }
+
 .skillsFlexContainer {
   height: 485px;
   width: 100%;
@@ -102,6 +104,31 @@ progress::-webkit-progress-bar {
   justify-content: space-between;
 }
 
+
+
+.description__about {
+  font-family: var(--mainFontFamily);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+.description{
+  padding-bottom: 115px;
+}
+
+.description__info {
+  margin-top: 10px;
+margin-bottom: 20px;
+  font-family: var(--description);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  color: #333333;
+}
+
 @media screen and (max-width: 375px) {
   .skillsFlexContainer {
     flex-direction: column;
@@ -114,36 +141,93 @@ progress::-webkit-progress-bar {
     height: 218px;
   }
 
-  .skillsList{
-gap: 10px;
+  .skillsList {
+    gap: 10px;
   }
 
-  .skillsProfile{
-padding-bottom: 25px;
+  .skillsProfile {
+    padding-bottom: 25px;
   }
 
   .skillsTitle {
     padding-top: 25px;
     margin-bottom: 25px;
+  }
+
+  .container {
+    max-width: 1109px;
+    width: 77%;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .description__info {
+
+    font-family: var(--description);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: justify;
+    color: #333333;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .description__info {
+
+    font-family: var(--description);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #333333;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .description__info {
+
+    font-family: var(--description);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+    color: #333333;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .description__about {
+
+    margin-top: 53px;
+    margin-bottom: 76px;
+    font-family: var(--description);
+    font-style: normal;
+    font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
   }
 
-  .skillsToolsTitle
-   {
+  .skillsToolsTitle {
     font-size: 12px;
     line-height: 25px;
     margin-bottom: 10px;
     width: 98px;
   }
 
-  .skillsToolsDescription{
+  .skillsToolsDescription {
     font-size: 12px;
     line-height: 25px;
   }
+
   .skillsProgress {
     width: 200px;
     height: 18px;
   }
 }
+
