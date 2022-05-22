@@ -106,21 +106,20 @@ progress::-webkit-progress-bar {
 
 
 
-.about {
-  margin-left: 165px;
-  margin-top: 53px;
-  margin-bottom: 76px;
+.description__about {
   font-family: var(--mainFontFamily);
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
   color: #333333;
 }
+.description{
+  padding-bottom: 115px;
+}
 
 .description__info {
-
-  margin-bottom: 115px;
+  margin-top: 10px;
+margin-bottom: 20px;
   font-family: var(--description);
   font-style: normal;
   font-weight: 400;
@@ -165,7 +164,6 @@ progress::-webkit-progress-bar {
 @media screen and (max-width:1024px) {
   .description__info {
 
-    margin-bottom: 115px;
     font-family: var(--description);
     font-style: normal;
     font-weight: 400;
@@ -179,7 +177,6 @@ progress::-webkit-progress-bar {
 @media screen and (max-width:768px) {
   .description__info {
 
-    margin-bottom: 115px;
     font-family: var(--description);
     font-style: normal;
     font-weight: 400;
@@ -193,7 +190,6 @@ progress::-webkit-progress-bar {
 @media screen and (max-width:425px) {
   .description__info {
 
-    margin-bottom: 115px;
     font-family: var(--description);
     font-style: normal;
     font-weight: 400;
