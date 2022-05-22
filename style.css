@@ -1,14 +1,99 @@
-/* general features */
-p,
-ul,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+* {
   margin: 0;
   padding: 0;
+}
+.hero {
+  background-image: url(/img/hero_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 93px;
+  height: 768px;
+  margin-bottom: 90px;
+}
+.hero__top {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-head {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: px;
+  margin-right: 200px;
+  /* identical to box height */
+  height: 22px;
+
+  color: #ffffff;
+}
+
+.hero-link:hover {
+  font-weight: 700;
+}
+.hero-link {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 60px;
+  /* identical to box height */
+  text-decoration: none;
+  padding-top: 93px;
+  color: #ffffff;
+}
+.hero-title {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 78px;
+  /* identical to box height */
+  margin-top: 152px;
+
+  display: flex;
+  align-self: center;
+  color: #ffffff;
+}
+.hero-text {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  margin-top: 25px;
+
+  color: #ffffff;
+}
+.hero-subtitle-link {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  /* identical to box height */
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 240px;
+}
+.hero-list {
+  display: flex;
+
+  list-style-type: none;
+}
+.hero-subtitle {
+  margin-top: 106px;
+}
+
+.hero-lines {
+  position: sticky;
+  width: 20px;
+  height: 22px;
+  right: 20px;
+  background-image: url(/img/lines.png);
+  background-repeat: no-repeat;
+  display: none;
+
 }
 
 /* utility class */
@@ -129,7 +214,197 @@ margin-bottom: 20px;
   color: #333333;
 }
 
+
+
+
+
+
+@media screen and (max-width:1024px) {
+  .description__info {
+
+    font-family: var(--description);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: justify;
+    color: #333333;
+  }
+    .hero {
+    width: 100%;
+    margin: 0px;
+  }
+  .hero-lines {
+    position: fixed;
+    width: 20px;
+    height: 22px;
+    margin-left: 674px;
+    background-image: url(/img/lines.png);
+    background-repeat: no-repeat;
+    display: block;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .description__info {
+
+    font-family: var(--description);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #333333;
+  }
+
+   .hero {
+    width: 100%;
+    margin: 0px;
+  }
+  .hero-lines {
+    position: fixed;
+    width: 20px;
+    height: 22px;
+    margin-left: 474px;
+    background-image: url(/img/lines.png);
+    background-repeat: no-repeat;
+   display: block;
+  }
+  .hero-list-item {
+    display: none;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .description__info {
+
+    font-family: var(--description);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+    color: #333333;
+  }
+
+    .about-text {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 19px;
+    margin-bottom: 14px;
+  }
+  .about-subtitle-text {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 19px;
+  }
+  .hero {
+    text-align: center;
+    padding-top: 36px;
+  }
+  .hero-head {
+   
+    font-family: var(--mainFontFamily);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .hero-title {
+    margin-top: 50px;
+    display: block;
+    width: 100vh;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .container {
+    width: 77%;
+  }
+  .hero-list-item {
+    display: none;
+  }
+  .hero-text {
+    margin-top: 13px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .hero-subtitle-link {
+    margin-top: 41px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .hero-lines {
+    visibility: visible;
+    margin-left: 34px;
+  }
+}
+
+
+
 @media screen and (max-width: 375px) {
+  .hero {
+    text-align: center;
+    padding-top: 36px;
+  }
+  .hero-head { 
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0px;
+  }
+  .hero-title {
+    margin-top: 50px;
+    display: block;
+    width: 100vh;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .hero-list-item {
+    display: none;
+  }
+  .hero-text {
+    margin-top: 13px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .hero-subtitle-link {
+    margin-top: 41px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .hero-lines {
+    visibility: visible;
+    margin-left: 34px;
+  }
   .skillsFlexContainer {
     flex-direction: column;
     gap: 26px;
@@ -159,49 +434,8 @@ margin-bottom: 20px;
     width: 77%;
     margin-inline: auto;
   }
-}
 
-@media screen and (max-width:1024px) {
-  .description__info {
-
-    font-family: var(--description);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    text-align: justify;
-    color: #333333;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .description__info {
-
-    font-family: var(--description);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: justify;
-    color: #333333;
-  }
-}
-
-@media screen and (max-width:425px) {
-  .description__info {
-
-    font-family: var(--description);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: justify;
-    color: #333333;
-  }
-}
-
-@media screen and (max-width:375px) {
-  .description__about {
+   .description__about {
 
     margin-top: 53px;
     margin-bottom: 76px;
@@ -230,4 +464,3 @@ margin-bottom: 20px;
     height: 18px;
   }
 }
-
