@@ -17,27 +17,28 @@ h6 {
   margin-inline: auto;
 }
 body {
-    height:100vh;
+  height: 100vh;
 }
-.background__hero {
-    background-image: url(./img/Background.png) ;
-    background-repeat: no-repeat;
-    height:100vh;
-  
+.hero {
+  background-image: url(./img/Background.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .hero__title {
-    font-family: 'Libre Franklin';
+  font-family: "Libre Franklin";
 
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-  
-    color: #FFFFFF; 
-    margin-left:60px;
-    text-decoration:none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+  margin-left: 60px;
+  text-decoration: none;
 }
 .hero__title:hover {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 /* .hero__home {
@@ -52,71 +53,63 @@ color: #FFFFFF;
     
 } */
 .flex-container {
-    display:flex;
-    justify-content: flex-end;
-    margin-right:83px ;
-    
-    align-items: center;
-    flex-direction: row;
-} 
+  display: flex;
+  padding-top: 93px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 145px;
+}
 .hero__portfolio {
-    font-family: 'Libre Franklin';
+  font-family: "Libre Franklin";
 
-font-weight: 700;
-font-size: 24px;
-line-height: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
 
-color: #FFFFFF;
-margin-right: 600px;   
+  color: #ffffff;
 }
 ul {
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    
+  list-style: none;
+  text-decoration: none;
+  display: flex;
 }
 .main__title {
-    font-family: 'Libre Franklin';
+  font-family: "Libre Franklin";
 
-font-weight: 400;
-font-size: 64px;
-line-height: 68px;
-
-color: #FFFFFF;
-margin-top:200px;
-margin-left:73px;
-margin-bottom: 0;
-
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 68px;
+  margin-bottom: 25px;
+  color: #ffffff;
+  /* margin-top: 200px;
+  margin-left: 73px; */
+  /* margin-bottom: 200px; */
 }
 .main__subtitle {
-    font-family: 'Libre Franklin';
-font-weight: 400;
-font-size: 24px;
-line-height: 26px;
-
-color: #FFFFFF;
-margin-left:73px;
+  font-family: "Libre Franklin";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 105px;
+  color: #ffffff;
 
 }
 .last-title {
-    font-family: 'Libre Franklin';
+  font-family: "Libre Franklin";
 
-font-weight: 400;
-font-size: 18px;
-line-height: 22px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
 
-
-color: #FFFFFF;
-
-
+  color: #ffffff;
 }
 .work__title {
-    margin-top: 157px;
-    margin-left: 73px;
+  margin-top: 157px;
+  margin-left: 73px;
 }
 .hero {
-    text-decoration: none;    }
-
+  text-decoration: none;
+}
 
 :root {
   --mainFontFamily: "Libre Franklin";
@@ -127,6 +120,8 @@ color: #FFFFFF;
   width: 100%;
   height: 693px;
   background: #fffaf2;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .skillsTitle {
@@ -215,12 +210,12 @@ progress::-webkit-progress-bar {
     height: 218px;
   }
 
-  .skillsList{
-gap: 10px;
+  .skillsList {
+    gap: 10px;
   }
 
-  .skillsProfile{
-padding-bottom: 25px;
+  .skillsProfile {
+    padding-bottom: 25px;
   }
 
   .skillsTitle {
@@ -231,20 +226,167 @@ padding-bottom: 25px;
     text-align: center;
   }
 
-  .skillsToolsTitle
-   {
+  .skillsToolsTitle {
     font-size: 12px;
     line-height: 25px;
     margin-bottom: 10px;
     width: 98px;
   }
 
-  .skillsToolsDescription{
+  .skillsToolsDescription {
     font-size: 12px;
     line-height: 25px;
   }
   .skillsProgress {
     width: 200px;
     height: 18px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .flex-container {
+    margin-right: 26px;
+  }
+
+  .background__hero {
+    background-image: url(./img/Background.png);
+
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 370px;
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .hero__title {
+    font-size: 8px;
+    line-height: 10px;
+
+    margin-left: 10px;
+  }
+
+  .hero__portfolio {
+    font-size: 10px;
+    line-height: 14px;
+    margin-left: 20px;
+  }
+
+  .main__title {
+    font-size: 32px;
+    line-height: 34px;
+    margin-top: 100px;
+    margin-left: 35px;
+  }
+  .main__subtitle {
+    font-size: 12px;
+    line-height: 26px;
+
+    margin-left: 35px;
+  }
+  .last-title {
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .work__title {
+    margin-top: 50px;
+    margin-left: 35px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .flex-container {
+    margin-right: 13px;
+  }
+
+  .background__hero {
+    background-image: url(./img/Background.png);
+
+    background-repeat: no-repeat;
+    width: 425px;
+    height: 420px;
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .hero__title {
+    font-size: 10px;
+    line-height: 14px;
+
+    margin-left: 11px;
+  }
+
+  .hero__portfolio {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 13px;
+  }
+
+  .main__title {
+    font-size: 32px;
+    line-height: 34px;
+    margin-top: 140px;
+    margin-left: 20px;
+  }
+  .main__subtitle {
+    font-size: 12px;
+    line-height: 26px;
+
+    margin-left: 20px;
+  }
+  .last-title {
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .work__title {
+    margin-top: 70px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .flex-container {
+    margin-right: 13px;
+  }
+
+  .background__hero {
+    background-image: url(./img/Background.png);
+
+    background-repeat: no-repeat;
+    width: auto;
+    height: 760px;
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .hero__title {
+    font-size: 16px;
+    line-height: 14px;
+
+    margin-left: 30px;
+  }
+
+  .hero__portfolio {
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: 13px;
+  }
+
+  .main__title {
+    font-size: 55px;
+    line-height: 57px;
+    margin-top: 270px;
+    margin-left: 20px;
+  }
+  .main__subtitle {
+    font-size: 23px;
+    line-height: 25px;
+
+    margin-left: 21px;
+  }
+  .last-title {
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .work__title {
+    margin-top: 150px;
+    margin-left: 20px;
   }
 }
