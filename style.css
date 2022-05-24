@@ -153,11 +153,13 @@ padding-bottom: 25px;
 /* Portfolio */
 .portfolio{
   display: flex;
-  height: 822px;
+  height: auto;
+
 }
 .mainInfo{
+  height: auto;
   display: flex;
-  justify-content: space-between;
+   justify-content: space-between; 
 }
 .portfolio__title{
   font-family: var(--main-font-family);
@@ -166,6 +168,7 @@ font-size: 24px;
 height: 29px;
 text-align: left;
 margin-bottom: 86px;
+margin-top: 93px;
 }
 .portfolio__subtitle{
   font-family: var(--main-font-family);
@@ -222,28 +225,178 @@ background-image: url(./img/portfolio_4.jpg);
 width: 255px;
 height: 144px;
 bottom: 0;
-right: 0px;
+right: 0;
 }
-.buttons-container{
-position: relative;
-bottom: 0px;
 
+.button-back{
+  background-image: url(./img/button_back.png);
+
+top: 307px;
+}
+.button-forward{
+  background-image: url(./img/button_forward.png);
+  left: 25px;
+  bottom: 85px;
 }
 .button-back,
 .button-forward{
 background-color: white;
-border: 0;
+border: 0; 
 width: 24px;
-height: 24px;
+height: 20px;
 font-size: 24px;
-text-align: center;
-color: #333333;
+background-repeat: no-repeat;
+    background-size: contain;
+   
+    position: relative;
+    display: flex;
+}
+@media screen and (max-width:1440px){
 
+
+}
+ @media screen and (max-width:1024px){
+  .img-container{
+    height: 260px;
+   width:413px; 
+ }
+ .button-back{
+top: 237px;
+}
+.button-forward{
+ 
+  bottom: 0px;
+}
+  .portfolio__img-1{
+    width: 233px;
+    height:96px;
+    }
+    .portfolio__img-2{
+    width: 170px;
+    height: 160px;
+    right: 0px;
+    }
+    .portfolio__img-3{
+    width: 233px;
+    height: 156px;
+    
+    }
+    .portfolio__img-4{
+    width: 170px;
+    height: 96px;
+    }
+  
+
+.portfolio__title{
+  margin-top: 62px;
+  margin-bottom: 57px;
+}
+.portfolio__subtitle{
+  margin-bottom:32px ;
+ }
+.portfolio__info{
+  margin-bottom: 80px;
+}
+
+} 
+
+@media screen and (max-width:768px){
+ 
+  .portfolio__title,
+.portfolio__subtitle,
+.portfolio__info{
+text-align: center;
+}
+  .mainInfo{
+   display: flex;
+   flex-direction: column;
+   height: 700px;
+ }
+  
+  .info__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .portfolio__info{
+    margin-bottom:0;
+    width: auto;
+    height: 100px;
+  }
+  .img-container{
+    height: 370px;
+   width: 586px; 
+ margin-bottom: 10px;
+top: 15px;
+ }
+ 
+ 
+ .portfolio__img-1{
+ background-image: url(./img/portfolio_1.jpg);
+ width: 330px;
+ height: 132px;
+ }
+ .portfolio__img-2{
+ background-image: url(./img/portfolio_2.jpg);;
+ width: 236px;
+ height: 221px;
+ right: 0px;
+ }
+ .portfolio__img-3{
+ background-image: url(./img/portfolio_3.jpg);
+ width: 330px;
+ height: 214px;
+ bottom: 0px;
+ 
+ }
+ .portfolio__img-4{
+ background-image: url(./img/portfolio_4.jpg);
+ width: 235px;
+ height: 134px;
+ bottom: 0;
+ right: 0px;
+ }
+ .button-back,
+ .button-forward{
+top: 0;
+left: 0;
+bottom: 0;
+ }
+}
+@media screen and (max-width:425px){
+ 
+  .img-container{
+    width:305px;
+    height: 195px;
+    margin-bottom: 23.53px;
+    top:0 ;
+    }
+    .mainInfo{
+      height: 600px;
+    }
+    .portfolio__img-1{
+    width: 169.76px;
+    height: 69.85px;
+    }
+    .portfolio__img-2{ 
+    width: 123.69px;
+    height: 113.01px;
+    }
+    .portfolio__img-3{
+      width:169.76px ;
+      height: 113.01px;
+    
+    }
+    .portfolio__img-4{
+      width: 121.69px;
+      height: 69.85px;
+    }
 }
 @media screen and (max-width:375px){
 .portfolio{
   height: 404px;
-  width:375px;
+ 
 }
 .mainInfo{
   flex-direction: column;
@@ -253,7 +406,7 @@ color: #333333;
 display: flex;
 align-items: center;
 flex-direction: column;
-
+ width: 305px;
 
 }
 .portfolio__title,
@@ -276,16 +429,19 @@ line-height: 25px;
 }
 .portfolio__info{
 margin-bottom: 0;
-height: 71px;
+height: 48px;
+width: 305px;
 font-weight: 400;
 font-size: 12px;
 line-height: 14px;
 }
-
+.info__container{
+  margin-bottom: 10px;
+}
 .img-container{
 width:305px;
 height: 195px;
-
+margin-bottom: 23.53px;
 top:0 ;
 
 }
@@ -306,4 +462,18 @@ height: 113.01px;
   width: 121.69px;
   height: 69.85px;
 }
+
+  .button-back
+  .button-forward{
+  width: auto;
+  height: 18px;
+  font-size: 24px;
+  position: relative;
+  }
+  .button-back{
+right: 0;
+  }
+  .button-forward{
+    left: 0;
+  }
 }
