@@ -6,7 +6,7 @@
   list-style: none;
 }
 .h2touch {
-  font-family: "Libre Franklin";
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -24,7 +24,7 @@
   top: 2920px;
 }
 li {
-  font-family: "Libre Franklin";
+  font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -35,16 +35,21 @@ li {
 
   color: #333333;
 }
-@media screen and(max-width: 375px) {
+
+.adap {
+  display: flex;
+  gap: 70px;
+}
+@media (max-width: 768px) {
+  .getintouch {
+    flex-direction: column;
+  }
   h2 {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
   }
   .adap {
-    display: flex;
-  }
-  .getintouch {
-    display: none;
+    gap: 30px;
   }
 }
