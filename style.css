@@ -1,27 +1,200 @@
-/* general features */
-p,
-ul,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+* {
   margin: 0;
   padding: 0;
 }
-:root{
-  --main-font-family: 'Libre Franklin', sans-serif;
+.hero {
+  background-image: url(/img/hero_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 93px;
+  height: 768px;
+  margin-bottom: 90px;
+}
+.hero__top {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-head {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: px;
+  margin-right: 200px;
+  /* identical to box height */
+  height: 22px;
 
-  }
+  color: #ffffff;
+}
+
+.hero-link:hover {
+  font-weight: 700;
+}
+.hero-link {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 60px;
+  /* identical to box height */
+  text-decoration: none;
+  padding-top: 93px;
+  color: #ffffff;
+}
+.hero-title {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 78px;
+  /* identical to box height */
+  margin-top: 152px;
+
+  display: flex;
+  align-self: center;
+  color: #ffffff;
+}
+.hero-text {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  margin-top: 25px;
+
+  color: #ffffff;
+}
+.hero-subtitle-link {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  /* identical to box height */
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 240px;
+}
+.hero-list {
+  display: flex;
+
+  list-style-type: none;
+}
+.hero-subtitle {
+  margin-top: 106px;
+}
+
+.hero-lines {
+  position: sticky;
+  width: 20px;
+  height: 22px;
+  right: 20px;
+  background-image: url(/img/lines.png);
+  background-repeat: no-repeat;
+  display: none;
+
+}
+
+/* utility class */
 .container {
   max-width: 1109px;
   width: 77%;
   margin-inline: auto;
 }
+.portfolio{
+    display: flex;
+  
+}
+.mainInfo{
+    height: 822px;
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio__title{
+    font-family: var(--main-font-family);
+    color: #333333;
+font-size: 24px;
+height: 29px;
+text-align: left;
+margin-bottom: 86px;
+}
+.portfolio__subtitle{
+    font-family: var(--main-font-family);
+    color: #333333;
+font-size: 18px;
+height: 25px;
+text-align: left;
+margin-bottom: 48px;
+}
+.portfolio__info{
+    font-family: var(--main-font-family);
+    color: #333333;
+    height:137px;
+    width: 349px; 
+    margin-bottom:235px ;
+line-height: 30px;
+}
+.img-container{
+     height: 403px;
+    width: 634px; 
+    display: flex;
+    gap: 5px;
+    position: relative;
+top: 206px;
+
+}
+.portfolio__img{
+    content: "";
+    background-repeat: no-repeat;
+background-size: contain;
+position: absolute;
+
+}
+.portfolio__img-1{
+background-image: url(./img/portfolio_1.jpg);
+width: 350px;
+height: 144px;
+}
+.portfolio__img-2{
+background-image: url(./img/portfolio_2.jpg);;
+width: 256px;
+height: 241px;
+right: 0px;
+}
+.portfolio__img-3{
+background-image: url(./img/portfolio_3.jpg);
+width: 350px;
+height: 234px;
+bottom: 0px;
+
+}
+.portfolio__img-4{
+background-image: url(./img/portfolio_4.jpg);
+width: 255px;
+height: 144px;
+bottom: 0;
+right: 0px;
+}
+.buttons-container{
+position: relative;
+bottom: 0px;
+
+}
+.button-back,
+.button-forward{
+background-color: white;
+border: 0;
+width: 24px;
+height: 24px;
+font-size: 24px;
+text-align: center;
+color: #333333;
+
+}
 
 :root {
-  --mainFontFamily: "Libre Franklin";
+  --mainFontFamily: : 'Libre Franklin', sans-serif;
 }
 
 /* skills */
@@ -40,6 +213,7 @@ h6 {
   line-height: 29px;
   color: #333333;
 }
+
 .skillsFlexContainer {
   height: 485px;
   width: 100%;
@@ -105,7 +279,222 @@ progress::-webkit-progress-bar {
   justify-content: space-between;
 }
 
+
+
+.description__about {
+  font-family: var(--mainFontFamily);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+.description{
+  padding-bottom: 115px;
+}
+
+.description__info {
+  margin-top: 10px;
+margin-bottom: 20px;
+  font-family: var(--description);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  color: #333333;
+}
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+  .description__info {
+
+    font-family: var(--description);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: justify;
+    color: #333333;
+  }
+    .hero {
+    width: 100%;
+    margin: 0px;
+  }
+  .hero-lines {
+    position: fixed;
+    width: 20px;
+    height: 22px;
+    margin-left: 674px;
+    background-image: url(/img/lines.png);
+    background-repeat: no-repeat;
+    display: block;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .description__info {
+
+    font-family: var(--description);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #333333;
+  }
+
+   .hero {
+    width: 100%;
+    margin: 0px;
+  }
+  .hero-lines {
+    position: fixed;
+    width: 20px;
+    height: 22px;
+    margin-left: 474px;
+    background-image: url(/img/lines.png);
+    background-repeat: no-repeat;
+   display: block;
+  }
+  .hero-list-item {
+    display: none;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .description__info {
+
+    font-family: var(--description);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+    color: #333333;
+  }
+
+    .about-text {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 19px;
+    margin-bottom: 14px;
+  }
+  .about-subtitle-text {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 19px;
+  }
+  .hero {
+    text-align: center;
+    padding-top: 36px;
+  }
+  .hero-head {
+   
+    font-family: var(--mainFontFamily);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .hero-title {
+    margin-top: 50px;
+    display: block;
+    width: 100vh;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .container {
+    width: 77%;
+  }
+  .hero-list-item {
+    display: none;
+  }
+  .hero-text {
+    margin-top: 13px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .hero-subtitle-link {
+    margin-top: 41px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .hero-lines {
+    visibility: visible;
+    margin-left: 34px;
+  }
+}
+
+
+
 @media screen and (max-width: 375px) {
+  .hero {
+    text-align: center;
+    padding-top: 36px;
+  }
+  .hero-head { 
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0px;
+  }
+  .hero-title {
+    margin-top: 50px;
+    display: block;
+    width: 100vh;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .hero-list-item {
+    display: none;
+  }
+  .hero-text {
+    margin-top: 13px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .hero-subtitle-link {
+    margin-top: 41px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .hero-lines {
+    visibility: visible;
+    margin-left: 34px;
+  }
   .skillsFlexContainer {
     flex-direction: column;
     gap: 26px;
@@ -117,34 +506,49 @@ progress::-webkit-progress-bar {
     height: 218px;
   }
 
-  .skillsList{
-gap: 10px;
+  .skillsList {
+    gap: 10px;
   }
 
-  .skillsProfile{
-padding-bottom: 25px;
+  .skillsProfile {
+    padding-bottom: 25px;
   }
 
   .skillsTitle {
     padding-top: 25px;
     margin-bottom: 25px;
+  }
+
+  .container {
+    max-width: 1109px;
+    width: 77%;
+    margin-inline: auto;
+  }
+
+   .description__about {
+
+    margin-top: 53px;
+    margin-bottom: 76px;
+    font-family: var(--description);
+    font-style: normal;
+    font-weight: 700;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
   }
 
-  .skillsToolsTitle
-   {
+  .skillsToolsTitle {
     font-size: 12px;
     line-height: 25px;
     margin-bottom: 10px;
     width: 98px;
   }
 
-  .skillsToolsDescription{
+  .skillsToolsDescription {
     font-size: 12px;
     line-height: 25px;
   }
+
   .skillsProgress {
     width: 200px;
     height: 18px;
