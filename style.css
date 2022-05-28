@@ -5,6 +5,7 @@
 
 .hero {
   background-image: url(/img/hero_bg.jpg);
+  background-color: grey;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 93px;
